@@ -1,0 +1,470 @@
+/*  Ein Kommentar in CSS */
+
+/*  Der * definiert den "global reset" Hier werden alle Elemente angesprochen, die später nicht anders definiert werden. */
+*
+{
+/*  Die Font kommt von Google Fonts */
+	font-family:'Roboto', sans-serif;
+	font-size:100%;
+}
+
+html,body
+{
+	height:100%;
+}
+
+/*  Hier wird der strukturierte Background des Body und die Schriftfarbe der normalen Schrift definiert */
+body 
+{
+	background:url(../images/gravel.png);
+	color:#7b7b7b;
+	margin:0px;
+	
+}
+
+/*  Hier wird unter anderem der Background des Inhalts definiert */
+#wrapper
+{
+	width:1200px;
+	margin:auto;
+	margin-top:20px;
+	background-color: white;
+	border-left:25px solid #1f2020;
+	border-right:25px solid #1f2020;
+}
+
+/*  ANFANG Hier wird die Farbe / Größen der Überschriften definiert */
+h1 , h2 , h3 , h4 , h5 , h6
+{
+	color:#1f2020;
+}
+
+h1
+{
+	font-size: 25px;
+}
+
+h2
+{
+	font-size: 20px;
+}
+/*  ENDE Farben / Größen Überschriften */
+/*  Definiert den Social Media Bereich */
+#social
+{
+	background: #1f2020;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social2
+{
+	height:48px;
+	width:48px;
+	margin: 10px;
+}
+/*  Wurde zur besseren Darstellung angelegt */
+#oben
+{
+	border-bottom: 1px solid #7b7b7b;
+}
+
+/*  Die Platzierung des Logos */
+#logo
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+}
+
+/*  Die Platzierung des Namens im Header */
+#tart
+{
+	text-align: center;
+}
+
+/*  Die Gestaltung des Namens im Header */
+#tart h1
+{
+	font-size: 115px;
+	font-family: 'Great Vibes', cursive;
+	margin:0%;
+	padding:0%;
+}
+
+/*  Die Gestaltung des Namens global  */
+.tart
+{
+	font-family: 'Great Vibes', cursive;
+	font-size: 35px;
+}
+
+/*  Die Gestaltung des Namens Footer */
+#footer .tart
+{
+	font-size: 22px;
+}
+
+/*  Die Positionierung des Slogans */
+#slogan
+{
+	text-align: center;
+}
+
+/*  Die Gestaltung des Slogans */
+#slogan h2
+{
+	font-size: 25px;
+	margin:0%;
+	padding:0%;
+}
+
+/*  Die Positionierung der Navigation */
+#navi
+{
+	width:742px;
+	margin:auto;
+}
+
+/*  Setzt die Bilder in der Desktop Variante auf grau */
+.grau
+{
+	filter:grayscale(1);
+}
+
+/*  Hebt die Vergrauung der Bilder bei Mouse-Over auf */
+.grau:hover
+{
+	filter:none;
+	transition: 1s;
+}
+
+/* Wird an verschiedenen Stellen zur Zentrierung verwendet */
+.ueber
+{
+	text-align: center;
+}
+
+/* Diese ID wurde zur besseren Darstellung der Inhalte (Artikel) erstellt */
+#ueber
+{
+	padding-top: 5px;
+	border-top: #7b7b7b solid 1px;
+}
+
+/* Eine Klasse zur Aufhebung der float Befehle */
+.setclear
+{
+	clear:both
+}
+
+/* Wurde zur besseren Darstellung der Inhalte (Artikel) erstellt */
+.inhalt
+{
+	border-top: #7b7b7b solid 1px;
+}
+
+/* Artikel mit Bild links - Bildausrichtung */
+.abild
+{
+	height: 400px;
+	width:500px;
+	float: left;
+}
+
+/* Artikel mit Bild links - Textausrichtung */
+.atext
+{
+	height: 400px;
+	width:700px;
+	float: left;
+	text-align: center;
+}
+
+/* Wurde zur besseren Darstellung der Inhalte (Artikel) erstellt */
+.inhaltr
+{
+	border-top: #7b7b7b solid 1px;
+}
+
+/* Artikel mit Bild rechts - Bildausrichtung */
+.abildr
+{
+	height: 400px;
+	width:500px;
+	float: right;
+}
+
+/* Artikel mit Bild rechts - Textausrichtung */
+.atextr
+{
+	height: 400px;
+	width:700px;
+	float: right;
+	text-align: center;
+}
+
+/* Steuert den Inhalt der Box auf verschiedenen Pages */
+.inhalt2
+{
+	display:flex;
+	justify-content: space-around;
+}
+
+/* Steuert den Inhalt der Box auf verschiedenen Pages */
+.mitarbeiter
+{
+	height: 480px;
+	width:380px;
+	text-align: center;
+}
+
+/* Hebt Texte/Links hervor */
+#speise
+{
+	font-size: 45px;
+	padding-bottom: 25px;
+	padding-top:0%;
+	margin: 0%;
+	text-align: center;
+}
+/* Hebt Daten hervor */
+.datum
+{
+	font-size:35px;
+	font-weight: bold;
+	color: coral;
+}
+
+/* Definiert den Fußbereich der Seite */
+#footer
+{
+	height:25px;
+	background: #1f2020;
+	color: #ffffff;
+	text-align: center;
+	line-height: 25px;
+}
+
+
+/* Eine selbst recherchierte Lösung um Videos responsible zu machen */
+.video-container 
+{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container-wrapper 
+{
+	max-width: 100%;
+	width: 600px;
+	left: 0;
+	right:0;
+	margin:auto;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Die Box der Bilder(Galerie) für den Desktop*/
+#bilder1
+{
+	display:flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+
+/* Die mobile Galerie-Variante wird nur mobil angezeigt und wird weiter unten definiert*/
+#bilder2
+{
+	display: none;
+}
+
+/* Definiert Links */
+a
+{
+	color:coral;
+	text-decoration:none;
+}
+
+/* Definiert Links im Footer */
+#footer a
+{
+	color:white;
+}
+
+/* Positioniert die Map in der Kontakt-Page */
+#map
+{
+	padding-top:25px;
+	padding-bottom: 25px;
+	text-align:center;
+}
+
+/* Um die Karte responsive zu machen */
+
+.responsiveContainer {
+	position: relative;
+	padding-bottom: 56%;
+	height: 0;
+	overflow: hidden;
+  }
+  
+.responsiveContainer iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+
+/* MEDIA QUERY */
+@media screen and (max-width:800px) {
+
+/* Zur besseren Darstellung mobile */
+body 
+{
+	background: #1f2020;
+}
+
+/* Zur besseren Darstellung mobile */
+#wrapper
+{
+	width:96%;
+	border: none;
+}
+
+/* Zur besseren Darstellung mobile */
+#header
+{
+	width:100%;
+}
+
+/* Zur besseren Darstellung mobile */
+#tart
+{
+	width:100%;
+	height:auto;
+}
+
+/* Zur besseren Darstellung mobile */
+#navi
+{
+	width:100%;
+}
+
+/* Mobile werden keine Border zur besseren Darstellung benötigt. */
+.inhalt
+{
+	border-top: none;
+}
+
+.inhaltr
+/* Mobile werden keine Border zur besseren Darstellung benötigt. */
+{
+	border-top: none;
+}
+
+/* Mobile kein hover möglich daher Grauschaltung deaktiviert. */
+.grau
+{
+	filter:none;
+}
+
+/* Die optimierte Positionierung für mobile Endgeräte */
+.abild
+{
+	float:none;
+	width:100%;
+	height:auto;
+	text-align: center;
+}
+
+/* Die optimierte Positionierung für mobile Endgeräte */
+.atext
+{
+	margin: auto;
+	height:auto;
+	width:100%;
+}
+
+/* Die optimierte Positionierung für mobile Endgeräte */
+.abildr
+{
+	float:none;
+	width:100%;
+	height:auto;
+	text-align: center;
+}
+
+/* Die optimierte Positionierung für mobile Endgeräte */
+.atextr
+{
+	margin: auto;
+	height:auto;
+	width:100%;
+}
+
+/* Die optimierte Positionierung der Inhalte für mobile Endgeräte */
+.inhalt2
+{
+	display:block;
+	justify-items: center;
+}
+
+/* Die optimierte Positionierung für mobile Endgeräte */
+.mitarbeiter
+{
+	display: block;
+	margin:auto;
+	width:100%;
+}
+
+/* Anpassung des Navigations-Containers an mobile Endgeräte */
+#navi
+{
+	width:100%;
+}
+
+/* Die optimierte Positionierung/Darstellung für mobile Endgeräte */
+#ueber
+{
+	padding-top: 0px;
+	border-top: none;
+}
+
+/* Die Box der Bildergalerie für den Desktop für mobile Endgeräte deaktiviert */
+#bilder1
+{
+	display:none;
+}
+
+/* Die Box Definierung des Containers für die für mobile Endgeräte optimierte Darstellung der Galerie bzw. Bilder */
+#bilder2
+{
+	display: block;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+/* Die globale Regel für die Bilddarstellung auf mobilen Endgeräten */
+img
+{
+	max-width:100%;
+	height:auto;
+}
+	
+	
+}
