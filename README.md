@@ -1,8 +1,6 @@
 # HTML_CSS_Grundkurs
 
-Mein Projekt zum cimdata HTML Grundkurs
-
-UNVERÄNDERT
+Mein seitdem unverändertes Projekt zum cimdata HTML Grundkurs
 
 Aufgabenstellung
 ================
